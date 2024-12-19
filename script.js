@@ -28,10 +28,10 @@ boxes.forEach((box) => {
 
         // Mark the box based on the current turn
         if (turnO) {
-            box.innerText = "O";
+            box.innerText = "🍎";
             turnO = false;
         } else {
-            box.innerText = "X";
+            box.innerText = "🍒";
             turnO = true;
         }
 
@@ -48,7 +48,7 @@ boxes.forEach((box) => {
 });
 
 const gameDraw = () => {
-    gameMessage.innerText = `Game was a Draw`;
+    gameMessage.innerText = `Game was a Draw🤝`;
     messageContainer.classList.remove("hide");
     disableBoxes();
 };
@@ -67,7 +67,7 @@ const enableBoxes = () => {
 };
 
 const showWinner = (winner) => {
-    gameMessage.innerText = `Congrats, winner is ${winner}`;
+    gameMessage.innerText = `Congrats🏆, winner is ${winner}`;
     messageContainer.classList.remove("hide");
     disableBoxes();
 };
