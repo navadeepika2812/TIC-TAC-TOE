@@ -73,3 +73,21 @@ body{
 {
  display: none;
 }
+@keyframes blast {
+    
+    50% {
+        transform: scale(1.5);
+        background-color: red;
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+    }
+    100% {
+        transform: scale(1);
+        background-color: yellow;
+        box-shadow: none;
+    }
+}
+.blast {
+    animation: blast 0.8s ease-in-out;
+}
+
+
