@@ -28,10 +28,10 @@ boxes.forEach((box) => {
 
         // Mark the box based on the current turn
         if (turnO) {
-            box.innerText = "🍎";
+            box.innerText = "x";
             turnO = false;
         } else {
-            box.innerText = "🍒";
+            box.innerText = "o";
             turnO = true;
         }
 
